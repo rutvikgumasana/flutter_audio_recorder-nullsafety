@@ -133,7 +133,7 @@ class FlutterAudioRecorder {
   /// if not determined(app first launch),
   /// this will ask user to whether grant the permission
   static Future<bool> get hasPermissions async {
-    bool? hasPermission = await _channel.invokeMethod('hasPermissions');
+    bool hasPermission = await _channel.invokeMethod('hasPermissions');
     return hasPermission;
   }
 
